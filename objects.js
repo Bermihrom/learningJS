@@ -17,7 +17,7 @@ console.log(object);
 delete object.a;
 
 let food = "berry";
-object[food] = "strawberry";
+object[food] = "strawberry";     
 
 
 console.log(object);
