@@ -1,0 +1,297 @@
+#test{
+    background-color:lightseagreen;
+    height: 50px;
+    width: 150px;
+}
+
+.menu-item{
+    border: 2px solid #1358eddd;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.menu-item .submenu{
+    height: 40px;
+    width: 120px;
+    background-color: #96ca7f;
+    position: absolute;
+    cursor: pointer;
+}
+
+#tabs .tab{
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+#tabs .whiteborder{
+    border: 1px solid #d97070;
+    border-bottom: 1px solid #fffbfb;
+    border-radius: 3px 0px;
+}
+#tabs .tabContent{
+    width: 300px;
+    height: 60px;
+    border: 1px solid #d97070;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 0px 3px;
+}
+#tabs .hide{
+    display: none;
+}
+#tabs .show{
+    display: block;
+}
+
+.module{
+    display: none;
+    position: fixed;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #ba8b0b;
+}
+.module-content{
+    background-color: #af7c7c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #251c02;
+    width: 80%;
+}
+.close{
+    color: #b51515;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#buttonAnimation{
+    height: 40px;
+    width: 120px;
+    border: 3px dashed #cf14b076;
+}
+#myContainer{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #048b1f;
+}
+#myAnimation{
+    width: 50px;
+    height: 50px;
+    background-color: #f119b4;
+    position: absolute;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fffefe;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.text{
+    color: #1503b7;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #903d3d;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, dot:hover{
+    background-color: #e58484;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity:1}
+}
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity:1}
+}
+#myInput{
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 5px;
+    border: 1px solid #5d449b;
+    margin-bottom: 12px;
+}
+#myUl{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#myUl li a{
+    border: 1px solid #754091;
+    margin-top: -1px;
+    background-color: #c6c6c6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+}
+#myUl li a.header {
+    background-color: #dfc8c8;
+    cursor: default;
+}
+#myUl li a:hover:not(.header){
+    background-color: #bababa;
+}
+
+#myImg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg:hover{
+    opacity: 0.7;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #e6e2e2;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    min-width: 700px;
+}
+#caption{
+    margin: auto;
+    display: block;
+    width: 80%;
+    min-width: 700px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom{
+    from{-webkit-transform: scale(0);}
+    to{-webkit-transform: scale(1);}
+}
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.closer {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #001ee0;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+.closer:hover{
+    color: #6aee60;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close:focus{
+    color: #62d85c;    
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+    .modal-content{
+        width: 100%;
+    }
+}
+#myProgress{
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: #3b217b;
+}
+#myBar{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: #c609f6;
+}
+#label{
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+}
+.accordion{
+    background-color: #00d6ba;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion.active, .accordion:hover{
+    background-color: #00a6e8;
+}
+.panel{
+    padding: 0 18px;
+    background-color: #fff;
+    display: none;
+}
+.panel.show{
+    display: block;
+}
