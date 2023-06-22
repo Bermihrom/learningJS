@@ -248,3 +248,44 @@ for(j = 0;j < accordion.length;j++){
         this.nextElementSibling.classList.toggle("show");
     }
 }
+
+function moneyConverter(valNum){
+
+    const course = document.getElementById("inputcourse").value;
+    console.log("valNum = ", valNum);
+    console.log("course = ",  course);
+    document.getElementById("outputgryv").innerHTML = valNum * course;
+}
+
+function toggleBtn(){
+    const u = document.getElementById("myToggleDiv");
+    if(u.style.display === "none"){
+        u.style.display = "block";
+    }else{
+        u.style.display = "none";
+    }
+}
+
+const closeBtn = document.getElementsByClassName("closebtn");
+for(i=0; i<closeBtn.length; i++){
+    console.log("i = ", i);
+    closeBtn[i].onclick = function(){
+        let div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){
+            div.style.display = "none";
+        }, 600)
+    }
+}
+
+const screen = window.innerWidth;
+console.log("screen = ", screen);
+if(matchMedia){
+    let us_screen = window.matchMedia("(max-width: 768px)")
+    us_screen.addListener(changes);
+    changes(us_screen);
+}
+function changes(us_screen){
+    let message = (us_screen.matches ? "less" : "more") + " than 768px";
+    document.getElementById("now").firstChild.nodeValue = message;
+}

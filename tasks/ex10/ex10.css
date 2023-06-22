@@ -1,0 +1,24 @@
+main{
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #000;
+    background-color: #fff;
+    box-shadow: inset 3px 3px 3px 3px #000000;
+}
+footer{
+    display: flex;
+    /* display: inline-block; */
+    justify-content: space-around;
+}
+a{
+    font-size: 20px;
+    font-style: bold;
+    color: #fd3232;
+    text-decoration: none;
+}
+body{
+    background-color: #dadada;
+}

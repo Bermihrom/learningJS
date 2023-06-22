@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>*******</title>
         <link rel="stylesheet" href="ex1.css">
+        <link rel="stylesheet" media = "all" href="all.css">
+        <link rel="stylesheet" media = "(max-width: 760px)" href="new.css">
     </head>
     <body>
         <select name="" id="mySelect" onchange="fun1()">
@@ -197,7 +199,56 @@
         <div class="panel">
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
-
+      
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <h1>Money Converter</h1>
+        <p>
+            <label>Course of the bill</label>
+            <input type="number" id="inputcourse" placeholder="₴">
+        </p>
+        <p>
+            <label>$</label>
+            <input type="number" id="inputdol" placeholder="$" oninput="moneyConverter(this.value)" onchange="moneyConverter(this.value)">
+        </p>
+        <p>₴: <span id="outputgryv"></span></p>
+      
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <button onclick="toggleBtn()">Click</button>
+        <div id="myToggleDiv">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Accusamus ad, minus sunt quas tenetur
+            quia ipsa sapiente, animi quos incidunt architecto natus libero, cumque voluptate?
+        </div>
+        <br>
+        <div class="alert danger">
+            <span class="closebtn">&times;</span>
+            <strong class="danger">DANGER!!!</strong>
+        </div>
+        <div class="alert success">
+            <span class="closebtn">&times;</span>
+            <strong class="success">SUCCESS!!!</strong>
+        </div>
+        <div class="alert info">
+            <span class="closebtn">&times;</span>
+            <strong class="info">Info</strong>
+        </div>
+      
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <div class="p_div">
+            <p>Current screen <span id="now">1</span></p>
+        </div>
 
         <script src="ex1.js"></script>
     </body>
