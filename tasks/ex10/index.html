@@ -6,14 +6,24 @@
   <link href="ex10.css" rel="stylesheet" type="text/css">
   <title>Задание №7</title>
 </head>
+<header>
+  <div class="header">
+    <p class="head_title">Задание №7</p>
+    <p class="mission">
+      Цель:
+        дать юзеру возможность создавать таблицы, задавая кол. колонок и строк
+        + наполнить ячейки текстом с и х адрессом. 
+    </p>
+  </div>
+</header>
 <body>
   <main>
-    <table id="myTable" border="1"> 
-    </table>
+    <!-- <table id="myTable" border="1"> </table> -->
     <form> 
       <input type = "text" id = "rows" value="1"> 
       <br>
       <input type = "text" id = "columns" value="1"> 
+      <input type = "text" id = "content"> 
       <br>
       <input type="button" onclick="createTable()" value="Create the table"> 
     </form>
@@ -23,7 +33,7 @@
       <a href="../ex9/index.html">←</a>
     </p>
     <p class="next_ex">Next exercise:
-      <a href="#">→</a>
+      <a href="../ex11/index.html">→</a>
     </p>
   </footer>
   <script src="ex10.js"></script>

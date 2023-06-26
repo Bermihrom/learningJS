@@ -38,17 +38,22 @@ header{
     background-color: #379eff;
     color: gold;
 }
-tr{
-    height: 60px;
+main{
+    font: 1.4em sans-serif;
 }
-
-
-table{
-    border: 1px solid #000;
-
+li{
+    border: 0.3px solid #c9c9c9;
 }
-
-td{
-
-    border: 1px solid #000;
+li:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+main div ul li ul{
+    display: none;
+}
+div ul li:hover > ul {
+    display: initial;
+}
+div ul li ul li:hover{
+    background-color: #00b3ff;
 }
